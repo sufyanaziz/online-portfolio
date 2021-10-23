@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+import image from "./assets/index";
+
+import Layout from "./components/Layout/layout";
+import Header from "./components/Header/header";
+import Navbar from "./components/Navbar/navbar";
+import Intro from "./components/Intro/intro";
+import Skills from "./components/Skills/skills";
+import Quote from "./components/Quote/quote";
+import Projects from "./components/Projects/projects";
+
+import Footer from "./components/Footer/footer";
+
+import { useMediaQuery } from "@mui/material";
+import { useEffect } from "react";
+
+const App = () => {
+  const matches = useMediaQuery("(min-width: 689px)");
+
+  useEffect(() => {
+    window.alert("HI, welcome to my online portfolio");
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Header
+        name="Achmad Sufyan Aziz"
+        image={image}
+        title="Junior Frontend Developer"
+      />
+      <Navbar />
+      <Intro />
+      <Skills />
+      <Quote />
+      <Projects />
+      <Footer matches={matches} />
+    </Layout>
   );
-}
+};
 
 export default App;
