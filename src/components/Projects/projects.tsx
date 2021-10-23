@@ -48,7 +48,12 @@ const Projects = () => {
   return (
     <ProjectsStyled>
       <Box sx={{ textAlign: "center" }} mb={4}>
-        <Typography fontWeight="bold" component="div" variant="h6">
+        <Typography
+          fontWeight="bold"
+          component="div"
+          variant="h6"
+          color="var(--mainColor)"
+        >
           PROJECTS.
         </Typography>
       </Box>

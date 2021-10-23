@@ -62,6 +62,7 @@ const Skills = () => {
           sx={{ textAlign: "center", marginBottom: 4, fontWeight: "bold" }}
           component="div"
           variant="h5"
+          color="var(--mainColor)"
         >
           SKILLS.
         </Typography>
