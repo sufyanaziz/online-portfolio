@@ -38,7 +38,7 @@ const dataIconFooter = [
     name: "linkedIn",
     icon: FaLinkedin,
     className: "icon-footer",
-    link: "https://www.linkedin.com/in/achmad-sufyan-b63603185/",
+    link: "https://www.linkedin.com/in/achmad-sufyan-aziz-b63603185/",
   },
 ];
 
