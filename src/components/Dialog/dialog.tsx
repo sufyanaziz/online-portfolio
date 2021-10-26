@@ -164,7 +164,7 @@ const DialogComponent: React.FC<DialogInterface> = ({
               <Typography
                 component="a"
                 variant="caption"
-                href={data.link}
+                href={data.linkGit}
                 target="__blank"
               >
                 {data.linkGit}
