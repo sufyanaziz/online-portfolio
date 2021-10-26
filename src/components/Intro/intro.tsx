@@ -3,11 +3,12 @@ import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { BsDownload } from "react-icons/bs";
 
-const Intro = () => {
+const Intro: React.FC<{ id: string }> = ({ id }) => {
   const matches = useMediaQuery("(min-width: 689px)");
   return (
-    <IntroStyled isLargeView={matches}>
+    <IntroStyled id={id} isLargeView={matches}>
       <Box
         sx={{
           padding: 2,
@@ -32,6 +33,26 @@ const Intro = () => {
             node js based
           </Typography>
         </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: "10px",
+        }}
+      >
+        <BsDownload style={{ fontSize: 20 }} />
+        <Typography
+          variant="subtitle1"
+          ml="10px"
+          component="a"
+          download
+          href="/Resume-AchmadSufyanAziz.pdf"
+          style={{ color: "unset" }}
+        >
+          My Resume
+        </Typography>
       </Box>
     </IntroStyled>
   );
