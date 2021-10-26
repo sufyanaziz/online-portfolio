@@ -22,13 +22,14 @@ interface HeaderProps {
     profile: string;
   };
   title: string;
+  id: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ name, image, title }) => {
+const Header: React.FC<HeaderProps> = ({ name, image, title, id }) => {
   const matches = useMediaQuery("(min-width: 689px)");
 
   return (
-    <HeaderStyled>
+    <HeaderStyled id={id}>
       <CustomizeCard
         sx={{ display: "flex", flexDirection: matches ? "row" : "column" }}
       >
