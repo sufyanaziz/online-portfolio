@@ -28,12 +28,13 @@ const App = () => {
         name="Achmad Sufyan Aziz"
         image={image}
         title="Junior Frontend Developer"
+        id="header-section"
       />
-      <Navbar />
-      <Intro />
-      <Skills />
+      <Navbar id="navbar-section" />
+      <Intro id="intro-section" />
+      <Skills id="skills-section" />
       <Quote />
-      <Projects />
+      <Projects id="projects-section" />
       <Footer matches={matches} />
     </Layout>
   );
