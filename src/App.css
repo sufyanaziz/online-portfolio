@@ -8,6 +8,10 @@
   --mainColor: #0278ae;
 }
 
+body {
+  color: #212121;
+}
+
 .icon-footer {
   color: var(--mainColor);
   font-size: 24px;
