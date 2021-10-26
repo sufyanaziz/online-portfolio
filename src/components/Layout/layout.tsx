@@ -11,18 +11,18 @@ interface LayoutInterface {
 const LayoutStyled = styled.div<LayoutInterface>`
   position: relative;
   max-width: 100vw;
-  overflow-x: hidden;
   min-height: 100vh;
+  // overflow-x: hidden;
 
-  .circle {
-    position: absolute;
-    background: var(--mainColor);
-    width: ${props => (props.matches ? "240px" : "160px")};
-    height: ${props => (props.matches ? "240px" : "160px")};
-    top: ${props => (props.matches ? "-80px" : "-40px")};
-    right: ${props => (props.matches ? "-80px" : "-40px")};
-    border-radius: 50%;
-  }
+  // .circle {
+  //   position: absolute;
+  //   background: var(--mainColor);
+  //   width: ${props => (props.matches ? "240px" : "160px")};
+  //   height: ${props => (props.matches ? "240px" : "160px")};
+  //   top: ${props => (props.matches ? "-80px" : "-40px")};
+  //   right: ${props => (props.matches ? "-80px" : "-40px")};
+  //   border-radius: 50%;
+  // }
 
   .children {
     margin: ${props =>
@@ -35,7 +35,7 @@ const Layout: React.FC = ({ children }) => {
 
   return (
     <LayoutStyled matches={matches}>
-      <div className="circle" />
+      {/* <div className="circle" /> */}
       <div className="children">{children}</div>
     </LayoutStyled>
   );
