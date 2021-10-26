@@ -26,7 +26,7 @@ const ProjectsStyled = emoticonStyled.div`
   }
 `;
 
-const Projects = () => {
+const Projects: React.FC<{ id: string }> = ({ id }) => {
   const matches = useMediaQuery("(min-width: 689px)");
 
   const [openDialog, setOpenDialog] = useState(false);
@@ -42,7 +42,7 @@ const Projects = () => {
         }}
         data={projectsData}
       />
-      <ProjectsStyled>
+      <ProjectsStyled id={id}>
         <Box sx={{ textAlign: "center" }} mb={4}>
           <Typography
             fontWeight="bold"

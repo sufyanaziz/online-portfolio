@@ -54,9 +54,9 @@ const SkillsData = [
   },
 ];
 
-const Skills = () => {
+const Skills: React.FC<{ id: string }> = ({ id }) => {
   return (
-    <SkillStyled>
+    <SkillStyled id={id}>
       <Box sx={{ py: 4 }}>
         <Typography
           sx={{ textAlign: "center", marginBottom: 4, fontWeight: "bold" }}
