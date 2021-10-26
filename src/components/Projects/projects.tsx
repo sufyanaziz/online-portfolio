@@ -10,12 +10,9 @@ import {
   useMediaQuery,
 } from "@mui/material";
 
-import SIPESAT_LOGIN from "../../assets/si_pesat_login.png";
-import SIPESAT_DASHBOARD from "../../assets/dashboard.png";
-import SIPESAT_FORM from "../../assets/form.png";
-import DOCPRO from "../../assets/docpro_login.png";
-
 import Dialog from "../Dialog/dialog";
+
+import { projectDetail, INProjectsData } from "../../data";
 
 const ProjectsStyled = emoticonStyled.div`
   padding: 10px 0;
@@ -28,40 +25,6 @@ const ProjectsStyled = emoticonStyled.div`
     transform: translate(0,-10px);
   }
 `;
-
-const projectDetail = [
-  {
-    title: "Web Developer at Uhamka - Intern",
-    webName: "Sistem Pengajuan Surat",
-    viewImg: SIPESAT_LOGIN,
-    dateWork: "1 Jan 2021 - 1 Sep 2021",
-    onClick: (setOpenDialog: any) => setOpenDialog(true),
-    images: [SIPESAT_LOGIN, SIPESAT_DASHBOARD, SIPESAT_FORM],
-    desc: "Create aplication for sistem pengajuan surat with React.js and Node.js",
-    link: "",
-  },
-  {
-    title: "Web Developer - Freelance",
-    webName: "Docpro",
-    viewImg: DOCPRO,
-    dateWork: "1 Jul 2020 - 1 Sep 2020",
-    onClick: (setOpenDialog: any) => setOpenDialog(true),
-    images: [DOCPRO],
-    desc: "Frontend - React.js\n-Maintance Web Apointment docpro\n- Create a few features on the website docpro\nBackend - Node.js\n- Create API Web Apointmen docpro",
-    link: "https://docpro-app.herokuapp.com/login",
-  },
-];
-
-export interface INProjectsData {
-  title: string;
-  webName: string;
-  viewImg: string;
-  dateWork: string;
-  onClick: (setOpenDialog: any) => any;
-  images: string[];
-  desc: string;
-  link: string;
-}
 
 const Projects = () => {
   const matches = useMediaQuery("(min-width: 689px)");

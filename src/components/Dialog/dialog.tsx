@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-import { INProjectsData } from "../Projects/projects";
+import { INProjectsData } from "../../data";
 import Box from "@mui/system/Box";
 
 import { useState } from "react";
@@ -143,7 +143,7 @@ const DialogComponent: React.FC<DialogInterface> = ({
           {data.link !== "" && (
             <>
               <Typography variant="caption" component="span">
-                Link Prev :
+                Link Prev:{" "}
               </Typography>
               <Typography
                 component="a"
@@ -152,6 +152,22 @@ const DialogComponent: React.FC<DialogInterface> = ({
                 target="__blank"
               >
                 {data.link}
+              </Typography>
+            </>
+          )}
+          {data.linkGit !== "" && (
+            <>
+              <br />
+              <Typography variant="caption" component="span">
+                Link Git:{" "}
+              </Typography>
+              <Typography
+                component="a"
+                variant="caption"
+                href={data.link}
+                target="__blank"
+              >
+                {data.linkGit}
               </Typography>
             </>
           )}
