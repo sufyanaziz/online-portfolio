@@ -26,7 +26,7 @@ const dataIconFooter = [
     name: "Facebook",
     icon: FaFacebookSquare,
     className: "icon-footer",
-    link: "https://www.facebook.com/ahmad.s.aziz.1/",
+    link: "https://www.facebook.com/A.SufyanAz",
   },
   {
     name: "github",
@@ -60,7 +60,7 @@ const Footer: React.FC<{ matches: boolean }> = ({ matches }) => {
           mb: matches ? 0 : 2,
         }}
       >
-        {dataIconFooter.map(data => {
+        {dataIconFooter.map((data) => {
           const Icon = data.icon;
           return (
             <Icon
