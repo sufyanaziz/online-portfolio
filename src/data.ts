@@ -9,6 +9,12 @@ import HealthyLenialLogin from "./assets/healthyLenialLogin.png";
 import HealthyLenialReport from "./assets/healthyLenialReport.png";
 import HealthyLenialHome from "./assets/healthyLenialHome.png";
 import HealthyLenialList from "./assets/healthyLenialList.png";
+// foodie
+import FoodieHome from "./assets/foodie-home.jpg";
+import FoodieMenu from "./assets/foodie-menu.jpg";
+import FoodieOrder from "./assets/foodie-order.jpg";
+import FoodieOrder2 from "./assets/foodie-order2.jpg";
+import FoodieCheckout from "./assets/foodie-checkout.jpg";
 
 export interface INProjectsData {
   title: string;
@@ -46,7 +52,7 @@ const projectDetail = [
     linkGit: "",
   },
   {
-    title: "Tugas Kuliah Implementasi Proyek",
+    title: "Project Implementation Coursework",
     webName: "HealthyLenial",
     viewImg: HealthyLenialLogin,
     dateWork: "17 Dec 2020",
@@ -60,6 +66,17 @@ const projectDetail = [
     desc: "create a website for college assignments with react.js and node.js",
     link: "https://app-healthylenial.herokuapp.com/",
     linkGit: "https://github.com/sufyanaziz/e-healthylenial",
+  },
+  {
+    title: "Coursework",
+    webName: "Foodie",
+    viewImg: FoodieHome,
+    dateWork: "10 Mar 2020",
+    onClick: (setOpenDialog: any) => setOpenDialog(true),
+    images: [FoodieHome, FoodieMenu, FoodieOrder, FoodieOrder2, FoodieCheckout],
+    desc: "create a website for college assignments with react.js (1st time)",
+    link: "",
+    linkGit: "https://github.com/sufyanaziz/project-web-kuliner-offline",
   },
 ];
 
