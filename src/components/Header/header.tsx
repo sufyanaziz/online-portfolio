@@ -87,7 +87,7 @@ const Header: React.FC<HeaderProps> = ({ name, image, title, id }) => {
               >
                 <HiMail />
                 <Typography variant="subtitle2" ml="5px">
-                  achmadsufyanaziz@gmail.com
+                  achmadsufyan98@gmail.com
                 </Typography>
               </Box>
 
